@@ -1,0 +1,160 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: "Red Hat Display", sans-serif;
+    line-height: 1.5rem;
+}
+
+body {
+    background-image: url(pattern-background-desktop.svg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-color: hsl(225, 100%, 94%) ;
+}
+
+@media (max-width:800px) {
+    body {
+        background-image:url(pattern-background-mobile.svg);
+        background-size: 100%;
+        background-repeat: no-repeat;
+        background-position: top;
+        background-color:hsl(225, 100%, 94%) ;
+    }
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    
+}
+.container {
+    margin-top: 5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 0.7rem;
+    background-color: white;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+    
+    
+}
+
+@media (max-width:800px) {
+    .container {
+        margin-bottom: 0;
+        margin-top: 2rem;
+    }
+}
+
+.main-text {
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.main-text p {
+    margin-top: 1rem;
+    font-weight: 600;
+    color: rgb(0 0 0 / 0.5);
+}
+
+p {
+    font-size: 1rem;
+}
+
+h1 {
+    font-size: 1.7rem;
+    font-weight: 700;
+}
+
+h2 {
+    margin-bottom: 0.4rem;
+}
+
+.plan {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: whitesmoke;
+    margin-top: 1.5rem;
+    padding: 1rem;
+    border-radius: 0.5rem;
+}
+
+.image {
+    margin-right: 1rem;
+}
+
+.year {
+    margin-right: 4.5rem;
+}
+
+.link a {
+    color: hsl(245, 75%, 52%);
+}
+
+.footer {
+    margin-top: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer a {
+    text-decoration: none;
+}
+
+.border {
+    background-color:hsl(245, 75%, 52%) ;
+    border-radius: 0.3rem;
+    padding: 0.8rem;
+    padding-inline: 6.4rem;
+    box-shadow:0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+    margin-bottom: 2rem;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.border a {
+    color: white;
+    font-weight: 700;
+}
+
+.commande {
+    margin-bottom: 3rem;
+
+}
+
+.commande a {
+    font-weight: 800;
+    color: rgb(0 0 0 / 0.5);
+    font-size: 1rem;
+}
+
+
+.commande a:active {
+    color: black;
+    font-weight: bold;
+}
+
+.border:hover {
+    transform: translateY(-2px); /* Move button up slightly on hover */
+}
+
+.border:active {
+    transform: translateY(1px); /* Move button down slightly on click */
+    box-shadow: 0 0.2rem 0.5rem rgba(0, 0, 0, 0.12); /* Adjust shadow */
+    
+}
+
+.link a:active {
+    text-decoration: none;
+}
+
+.border{
+    padding-inline: 7rem;
+}
+
